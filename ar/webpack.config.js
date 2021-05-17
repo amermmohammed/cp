@@ -6,7 +6,9 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     entry: {
         'app': './src/index.js',
-        'assets/js/banner': './src/assets/js/banner.js'
+        'assets/js/banner': './src/assets/js/banner.js',
+        'assets/js/tabs': './src/assets/js/tabs.js',
+        'assets/js/upload': './src/assets/js/upload.js'
     },
     output: {
         publicPath: '/',
@@ -56,6 +58,17 @@ module.exports = {
                     }
                 }]
             },
+            {
+                test: /\.(png|svg|jpe?g|gif)$/,
+                exclude: /fonts/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: "assets/images",
+                    }
+                }]
+            },
         ]
     },
     plugins: [
@@ -88,6 +101,31 @@ module.exports = {
             filename: "components/banner.html",
             template: "./src/components/banner.html",
             chunks: ['app', 'assets/js/banner']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/list.html",
+            template: "./src/components/list.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/tabs.html",
+            template: "./src/components/tabs.html",
+            chunks: ['app', 'assets/js/tabs']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/upload.html",
+            template: "./src/components/upload.html",
+            chunks: ['app', 'assets/js/upload']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/help.html",
+            template: "./src/components/help.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/summary.html",
+            template: "./src/components/summary.html",
+            chunks: ['app']
         })
     ]
 }
