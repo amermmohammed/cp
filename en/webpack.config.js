@@ -55,6 +55,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/button.html",
+            template: "./src/components/button.html",
         })
     ]
 }
