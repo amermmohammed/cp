@@ -7,11 +7,12 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     entry: {
         'app': './src/index.js',
+        'assets/js/banner': './src/assets/js/banner.js'
     },
     output: {
         publicPath: '/',
         path: path.join(__dirname, "/app"),
-        filename: 'app.js'
+        filename: '[name].js'
     },
     devServer: {
         contentBase: path.join(__dirname, "/app"),
@@ -24,6 +25,16 @@ module.exports = {
                 use: [{
                     loader: 'html-loader'
                 }]
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             },
             {
                 test: /\.(sa|sc|c)ss$/,
@@ -55,10 +66,27 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+            chunks: ['app']
         }),
         new HtmlWebpackPlugin({
             filename: "components/button.html",
             template: "./src/components/button.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/textfield.html",
+            template: "./src/components/textfield.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/card.html",
+            template: "./src/components/card.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/banner.html",
+            template: "./src/components/banner.html",
+            chunks: ['app', 'assets/js/banner']
         })
     ]
 }
