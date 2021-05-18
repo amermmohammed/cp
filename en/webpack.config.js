@@ -9,7 +9,8 @@ module.exports = {
         'app': './src/index.js',
         'assets/js/banner': './src/assets/js/banner.js',
         'assets/js/tabs': './src/assets/js/tabs.js',
-        'assets/js/upload': './src/assets/js/upload.js'
+        'assets/js/upload': './src/assets/js/upload.js',
+        'assets/js/chart': './src/assets/js/chart.js'
     },
     output: {
         publicPath: '/',
@@ -125,6 +126,26 @@ module.exports = {
             filename: "components/summary.html",
             template: "./src/components/summary.html",
             chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/actions.html",
+            template: "./src/components/actions.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/sidebar.html",
+            template: "./src/components/sidebar.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/table.html",
+            template: "./src/components/table.html",
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            filename: "components/chart.html",
+            template: "./src/components/chart.html",
+            chunks: ['app', 'assets/js/chart']
         })
     ]
 }
