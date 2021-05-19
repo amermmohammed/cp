@@ -10,9 +10,71 @@
 </head>
 
 <body>
-    <div style="font-family: sans-serif;">
-        <h1> مرحبا بكم عبر ويب باك عبر السيرفر</h1>
-        <button>زر تجريبي</button>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="main-page">
+            <header class="home-intro">
+                <h2 class="welcom-tag">
+                    مرحبا احمد، اتمنى انك تقضي يوما جميلا <br /> شاهد اخر ما حدث في متجرك
+                </h2>
+                <div class="c-summary">
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">34</span>
+                        <span class="c-summary__key">طلب</span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">1343</span>
+                        <span class="c-summary__key">زائر</span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">$4324</span>
+                        <span class="c-summary__key">مبيعات</span>
+                    </div>
+                </div>
+            </header>
+            <ul class="c-actions">
+                <li class="c-action">
+                    <span class="c-action__title">10 طلبات تحتاج المعالجة</span>
+                    <a href="#" class="c-btn c-action__link">مشاهدة الطلبات</a>
+                </li>
+                <li class="c-action">
+                    <span class="c-action__title">5 رسائل تحتاج الإجابة</span>
+                    <a href="#" class="c-btn c-action__link">مشاهدة الرسائل</a>
+                </li>
+                <li class="c-action">
+                    <span class="c-action__title">3 منتجات ضرورية على وشك النفاد</span>
+                    <a href="#" class="c-btn c-action__link">مشاهدة المنتجات</a>
+                </li>
+            </ul>
+            <div class="c-card">
+                <h3 class="c-card__title">معلومات الشحن</h3>
+                <a href="#" class="c-btn c-btn--primary c-card__action">ربط معلومات الشحن</a>
+                <p class="c-card__desc">لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...</p>
+            </div>
+            <banner></banner>
+            <chart></chart>
+            <div class="c-tabs js-tabs">
+                <div class="c-tabs__control">
+                    <span class="c-tabs__tab js-tab-link is-active" data-index="orders">طلبات بحاجة إلى مراجعة</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="products">منتجات على وشك النفاد</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="clients">زبائن جدد</span>
+                </div>
+                <div class="c-tabs__content">
+                    <div class="c-tabs__tabarea js-tab-area  is-active" data-indexed="orders">
+                        <div>tab1</div>
+                    </div>
+                    <div class="c-tabs__tabarea js-tab-area" data-indexed="products">
+                        <div>tab2</div>
+
+                    </div>
+                    <div class="c-tabs__tabarea js-tab-area" data-indexed="clients">
+                        <div>tab3</div>
+
+                    </div>
+                </div>
+            </div>
+            <help></help>
+        </div>
     </div>
 
 </body>

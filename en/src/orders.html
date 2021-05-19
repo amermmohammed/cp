@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">Orders</h1>
+            </header>
+            <div class="c-table c-table--select-all">
+                <header class="c-table__header">
+                    <h3 class="c-table__title">Orders</h3>
+                    <div class="c-table__actions">
+                        <button class="c-btn c-btn--primary c-btn--slim">Shipped</button>
+                        <button class="c-btn c-btn--slim">Processing</button>
+                        <button class="c-btn c-btn--destructive c-btn--slim">Delete</button>
+                    </div>
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 out of 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                        </div>
+                    </div>
+                </header>
+                <table class="c-table__data">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="sellect-all" hidden>
+                                <label for="sellect-all">select all</label>
+                            </th>
+                            <th>Product image</th>
+                            <th>Product name</th>
+                            <th>Buyer</th>
+                            <th>Shipping destination</th>
+                            <th>value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="sellect-all"></td>
+                            <td><img src="assets/images/black-shirt.jpg" alt="" class="c-list__media"></td>
+                            <td class="c-list__data">
+                                Black shirt M
+                            </td>
+                            <td class="c-list__data">
+                                Dwayne Bailey
+                            </td>
+                            <td class="c-list__data">
+                                Ca-USA
+                            </td>
+                            <td class="c-list__data">
+                                24.99$
+                            </td>
+                            <td>
+                                <div class="c-list_actions">
+                                    <a href="#" class="c-btn c-btn--small c-btn--primary">Shipped</a>
+                                    <a href="#" class="c-btn c-btn--small">Contact</a>
+                                    <a href="#" class="c-btn c-btn--small c-btn--destructive">Delete order</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="sellect-all"></td>
+                            <td><img src="assets/images/black-pants.jpg" alt="" class="c-list__media"></td>
+                            <td class="c-list__data">
+                                Black trousers
+                            </td>
+                            <td class="c-list__data">
+                                Yvonne Roberts
+                            </td>
+                            <td class="c-list__data">
+                                Saarbrücken-Germany
+                            </td>
+                            <td class="c-list__data">
+                                341.97$
+                            </td>
+                            <td>
+                                <div class="c-list_actions">
+                                    <a href="#" class="c-btn c-btn--small c-btn--primary">Shipped</a>
+                                    <a href="#" class="c-btn c-btn--small">Contact</a>
+                                    <a href="#" class="c-btn c-btn--small c-btn--destructive">Delete order</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="sellect-all"></td>
+                            <td><img src="assets/images/brown-shoe.jpg" alt="" class="c-list__media"></td>
+                            <td class="c-list__data">
+                                leather shoes
+                            </td>
+                            <td class="c-list__data">
+                                Naomi Lawrence
+                            </td>
+                            <td class="c-list__data">
+                                Berlin-Germany </td>
+                            <td class="c-list__data">
+                                15.99$
+                            </td>
+                            <td>
+                                <div class="c-list_actions">
+                                    <a href="#" class="c-btn c-btn--small c-btn--primary">Shipped</a>
+                                    <a href="#" class="c-btn c-btn--small">Contact</a>
+                                    <a href="#" class="c-btn c-btn--small c-btn--destructive">Delete order</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="sellect-all"></td>
+                            <td><img src="assets/images/running-shoe.jpg" alt="" class="c-list__media"></td>
+                            <td class="c-list__data">
+                                Running shoes
+                            </td>
+                            <td class="c-list__data">
+                                Gabriel Vasquez
+                            </td>
+                            <td class="c-list__data">
+                                London-England
+                            </td>
+                            <td class="c-list__data">
+                                478.13$
+                            </td>
+                            <td>
+                                <div class="c-list_actions">
+                                    <a href="#" class="c-btn c-btn--small c-btn--primary">Shipped</a>
+                                    <a href="#" class="c-btn c-btn--small">Contact</a>
+                                    <a href="#" class="c-btn c-btn--small c-btn--destructive">Delete order</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="c-list c-list--table-row">
+                            <td><input type="checkbox" id="sellect-all"></td>
+                            <td><img src="assets/images/dw-watch.jpg" alt="" class="c-list__media"></td>
+                            <td class="c-list__data">
+                                Daniel Wellington's watch
+                            </td>
+                            <td class="c-list__data">
+                                Wesley Perkins
+                            </td>
+                            <td class="c-list__data">
+                                Paris-France
+                            </td>
+                            <td class="c-list__data">
+                                19.99$
+                            </td>
+                            <td>
+                                <div class="c-list_actions">
+                                    <a href="#" class="c-btn c-btn--small c-btn--primary">Shipped</a>
+                                    <a href="#" class="c-btn c-btn--small">Contact</a>
+                                    <a href="#" class="c-btn c-btn--small c-btn--destructive">Delete order</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer class="c-table__footer">
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 out of 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <help></help>
+        </div>
+    </div>
+</body>
+
+</html>

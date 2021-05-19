@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المستخدمين</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">المستخدمين</h1>
+                <a class="c-btn" href="/add-user.html" name="new-user">مستخدم جديد</a>
+            </header>
+            <div class="c-table c-table--select-all">
+                <header class="c-table__header">
+                    <h3 class="c-table__title">المنتجات</h3>
+                    <div class="c-table__actions">
+                        <button class="c-btn c-btn--destructive c-btn--slim">حذف</button>
+                    </div>
+                    <div class="c-table__navigation"><span class="c-table__navigation__caption">6 من اصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </header>
+                <table class="c-table__data">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="sellect-all" hidden>
+                                <label for="sellect-all">تحديد الكل</label>
+                            </th>
+                            <th>صورة المستخدم</th>
+                            <th>إسم المستخدم</th>
+                            <th>البريد الألكتروني</th>
+                            <th>عدد المنتجات</th>
+                            <th>المبيعات</th>
+                            <th>الرصيد</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="https://randomuser.me/api/portraits/men/33.jpg" alt=""></td>
+                            <td>Dwayne Bailey</td>
+                            <td>dwayne.bailey@example.com</td>
+                            <td>12</td>
+                            <td>502$</td>
+                            <td>300$</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-2" name="item-2"></td>
+                            <td><img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""></td>
+                            <td>Yvonne Roberts</td>
+                            <td>yvonne.roberts@example.com</td>
+                            <td>15</td>
+                            <td>150$</td>
+                            <td>50$</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-3" name="item-3"></td>
+                            <td><img src="https://randomuser.me/api/portraits/women/30.jpg" alt=""></td>
+                            <td>Naomi Lawrence</td>
+                            <td>naomi.lawrence@example.com</td>
+                            <td>29</td>
+                            <td>1210$</td>
+                            <td>750$</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-4" name="item-4"></td>
+                            <td><img src="https://randomuser.me/api/portraits/men/96.jpg" alt=""></td>
+                            <td>Gabriel Vasquez</td>
+                            <td>gabriel.vasquez@example.com</td>
+                            <td>75</td>
+                            <td>120$</td>
+                            <td>45$</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-5" name="item-5"></td>
+                            <td><img src="https://randomuser.me/api/portraits/men/53.jpg" alt=""></td>
+                            <td>Wesley Perkins</td>
+                            <td>wesley.perkins@example.com</td>
+                            <td>28</td>
+                            <td>357$</td>
+                            <td>250$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer class="c-table__footer">
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 من اصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <help></help>
+        </div>
+    </div>
+</body>
+
+</html>

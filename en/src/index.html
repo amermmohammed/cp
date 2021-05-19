@@ -5,12 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>My control panel</title>
     <script type="text/html" src="{require('./index.js')}"></script>
 </head>
 
 <body>
-    <h1>Welcome from Webpack</h1>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="main-page">
+            <header class="home-intro">
+                <h2 class="welcom-tag">
+                    Hi Mark, I hope you are having a nice day <br /> Watch the latest updates in your store
+                </h2>
+                <div class="c-summary">
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">34</span>
+                        <span class="c-summary__key">Order</span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">1343</span>
+                        <span class="c-summary__key">Visitor</span>
+                    </div>
+                    <div class="c-summary__data">
+                        <span class="c-summary__value">4324$</span>
+                        <span class="c-summary__key">Sales</span>
+                    </div>
+                </div>
+            </header>
+            <ul class="c-actions">
+                <li class="c-action">
+                    <span class="c-action__title">10 orders need processing</span>
+                    <a href="#" class="c-btn c-action__link">View orders</a>
+                </li>
+                <li class="c-action">
+                    <span class="c-action__title">5 messages need a replay</span>
+                    <a href="#" class="c-btn c-action__link">View messages </a>
+                </li>
+                <li class="c-action">
+                    <span class="c-action__title">3 essential items are about to run out</span>
+                    <a href="#" class="c-btn c-action__link">View products </a>
+                </li>
+            </ul>
+            <div class="c-card">
+                <h3 class="c-card__title">Shipping information </h3>
+                <a href="#" class="c-btn c-btn--primary c-card__action">Link shipping information </a>
+                <p class="c-card__desc">Lorem Ipsum is a hypothetical model placed in designs to be presented to the client to visualize the way texts are placed in designs, whether they are printed designs ... brochures or flyers for example ... or website templates ...</p>
+            </div>
+            <banner></banner>
+            <chart></chart>
+            <div class="c-tabs js-tabs">
+                <div class="c-tabs__control">
+                    <span class="c-tabs__tab js-tab-link is-active" data-index="orders">Orders need to be reviewed</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="products">Products are about to run out</span>
+                    <span class="c-tabs__tab js-tab-link" data-index="clients">New customers</span>
+                </div>
+                <div class="c-tabs__content">
+                    <div class="c-tabs__tabarea js-tab-area  is-active" data-indexed="orders">
+                        <div>tab1</div>
+                    </div>
+                    <div class="c-tabs__tabarea js-tab-area" data-indexed="products">
+                        <div>tab2</div>
+
+                    </div>
+                    <div class="c-tabs__tabarea js-tab-area" data-indexed="clients">
+                        <div>tab3</div>
+
+                    </div>
+                </div>
+            </div>
+            <help></help>
+        </div>
+    </div>
+
 </body>
 
 </html>
