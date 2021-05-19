@@ -1,3 +1,4 @@
+$upload-size: 400px;
 .c-upload {
     @include e-card;
     min-width: 400px;
@@ -65,7 +66,6 @@
     font-size: 14px;
 }
 
-//small upload
 .c-upload--small {
     min-width: initial;
     min-height: initial;
@@ -86,7 +86,6 @@
     }
 }
 
-//state 
 .has-image.c-upload {
     .c-upload__label--remove {
         display: block;
@@ -96,5 +95,12 @@
         img {
             display: block;
         }
+    }
+}
+
+@media (max-width: $upload-size) {
+    .c-upload {
+        min-width: initial;
+        width: 100%;
     }
 }

@@ -63,3 +63,20 @@ $icon-size:32px;
     transform: scaleY(0);
     transform-origin: 50% 0;
 }
+
+@media (max-width: $bp-phone-normal) {
+    .c-banner {
+        padding-left: spacing("small");
+        padding-right: spacing("small");
+    }
+    .c-banner__icon {
+        left: spacing("small");
+    }
+    .c-banner__close {
+        right: spacing("small");
+    }
+    .c-banner__title {
+        margin-right: spacing("normal");
+        margin-left: $icon-size + spacing("extra-small");
+    }
+}
